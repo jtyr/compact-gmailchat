@@ -1,6 +1,6 @@
 {
-  "name": "Compact Gmail Chat",
-  "version": "1.4",
+  "name": "Compact Chat",
+  "version": "1.6",
   "description": "Helps to make the Gmail Chat more compact.",
   "icons": {
     "48"  : "icons/icon-48.png",

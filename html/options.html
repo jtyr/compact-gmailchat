@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Compact GTalk Options</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<link media="all" href="../css/options.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="../scripts/options.js"></script>
+</head>
+<body onload="restore_options()" class="chrome">
+
+<div id="page">
+
+<h2>Compact GTalk Options</h2>
+
+<div class="container">
+	<input type="checkbox" name="title" id="title"/><label for="title">Hide title</label><br/>
+	<input type="checkbox" name="search" id="search"/><label for="search">Hide search field</label><br/>
+	<input type="checkbox" name="status" id="status"/><label for="status">Hide status</label><br/>
+	<input type="checkbox" name="invisible" id="invisible"/><label for="invisible">Hide invisible alert</label><br/>
+
+	<br/>
+
+	<div class="center">
+		<button id="save" onclick="save_options()">Save</button>
+		<span id="msg">Options saved</span>
+	</div>
+</div>
+
+</div>
+
+</body>
+</html>

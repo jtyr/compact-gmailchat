@@ -1,0 +1,19 @@
+{
+  "name": "Compact Gmail Chat",
+  "version": "1.4",
+  "description": "Helps to make the Gmail Chat more compact.",
+  "icons": {
+    "48"  : "icons/icon-48.png",
+    "128" : "icons/icon-128.png"
+  },
+  "options_page": "html/options.html",
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": [ "http://mail.google.com/mail/*", "https://mail.google.com/mail/*" ],
+      "js" : ["scripts/contentscript.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background_page": "html/background.html"
+}

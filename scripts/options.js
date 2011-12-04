@@ -1,5 +1,5 @@
 // List of checkboxes
-var ch = ['title', 'search', 'status', 'invisible'];
+var ch = ['title', 'search', 'status', 'invisible', 'gp_title', 'gp_search', 'gp_status', 'gp_invisible'];
 
 // Saves options to localStorage
 function save_options() {

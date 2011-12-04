@@ -14,6 +14,10 @@ h2 {
 	text-align: center;
 }
 
+legend {
+	font-style: italic;
+}
+
 #page {
 	border: 2px solid silver;
 	width: 800px;
@@ -23,6 +27,11 @@ h2 {
 	text-align: left;
 	background-color: #e9e9e9;
 	padding: 20px;
+}
+
+#msg {
+	display: none;
+	font-weight: bold;
 }
 
 .container {
@@ -35,9 +44,4 @@ h2 {
 
 .center {
 	text-align: center;
-}
-
-#msg {
-	display: none;
-	font-weight: bold;
 }

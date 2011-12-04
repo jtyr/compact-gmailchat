@@ -1,27 +1,33 @@
 (function() {
 	chrome.extension.sendRequest({reqtype: 'compact'}, function(response) {
 		var css = '';
-		var root = 'div[class="ApVoH s"] ';
+		var root_gmail = 'div[class="ApVoH s"] ';
+		var root_gplus = 'div[class="CSS_LAYOUT_COMPONENT CSS_CHAT_ROSTER"] ';
+		var hide_style = '{ display: none !important; }' + "\n";
 		var o = response.data;
 
 		// Title
 		if (o.title == 'true') {
-			css += root + 'div.r { display: none !important; }';
+			css += root_gmail + 'div.r ' + hide_style;
+			css += root_gplus + 'table.roster_header' + hide_style;
 		}
 
 		// Search
 		if (o.search == 'true') {
-			css += root + 'div.dF { display: none !important; }';
+			css += root_gmail + 'div.dF ' + hide_style;
+			css += root_gplus + 'div.CSS_ME_ENTRY_SEARCH_DIV' + hide_style;
 		}
 
 		// Status
 		if (o.status == 'true') {
-			css += root + 'div.uk { display: none !important; }';
+			css += root_gmail + 'div.uk ' + hide_style;
+			css += root_gplus + 'div.me_widget_area' + hide_style;
 		}
 
 		// Invisible
 		if (o.invisible == 'true') {
-			css += root + 'div.pt div.ul { display: none !important; }';
+			css += root_gmail + 'div.pt div.ul ' + hide_style;
+			css += root_gplus + 'div[id=":rn"]' + hide_style;
 		}
 
 		// Apply the CSS

@@ -1,7 +1,7 @@
 {
   "name": "Compact Chat",
-  "version": "1.6",
-  "description": "Helps to make the Gmail Chat more compact.",
+  "version": "1.7",
+  "description": "Helps to make the Google Chat more compact.",
   "icons": {
     "48"  : "icons/icon-48.png",
     "128" : "icons/icon-128.png"
@@ -10,7 +10,7 @@
   "content_scripts": [
     {
       "all_frames": true,
-      "matches": [ "http://mail.google.com/mail/*", "https://mail.google.com/mail/*" ],
+      "matches": [ "http://mail.google.com/mail/*", "https://mail.google.com/mail/*", "http://talkgadget.google.com/talkgadget/*", "https://talkgadget.google.com/talkgadget/*" ],
       "js" : ["scripts/contentscript.js"],
       "run_at": "document_end"
     }
